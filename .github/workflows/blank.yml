@@ -3,10 +3,7 @@ name: Run Python Tests
 on:
   push:
     branches:
-      - main 
-  pull_request:
-    branches:
-      - main 
+      - new_feature_466970
 
 jobs:
   test:
@@ -30,4 +27,4 @@ jobs:
 
     - name: Run tests
       run: |
-        python -m unittest discover -s geometric_lib -p "Test.py"
+        python Test.py
