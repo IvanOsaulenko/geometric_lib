@@ -3,10 +3,10 @@ name: Python Unit Tests
 on:
   push:
     branches:
-      - main
+      - new_feature_466970
   pull_request:
     branches:
-      - main
+      - new_feature_466970
 jobs:
   test:
     runs-on: ${{ matrix.os }}
